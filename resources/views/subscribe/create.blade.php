@@ -21,8 +21,8 @@
                     @endforeach
                 </div>
                 <div class="p-6 text-gray-900 space-y-5">
-                    <x-input-label for="card-holder-name" value="Détenteur de la carte"/>
-                    <x-text-input id="card-holder-name" type="text"/>
+                    <x-input-label for="card-holder-name" value="Détenteur de la carte :"/>
+                    <x-text-input id="card-holder-name" type="text" class="w-full shadow rounded" placeholder="Nom du propriétaire de la carte" required="required"/>
 
                     <!-- Stripe Elements Placeholder -->
                     <div id="card-element" class="p-5 shadow rounded"></div>
