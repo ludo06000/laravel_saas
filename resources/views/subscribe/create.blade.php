@@ -8,6 +8,18 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div>
+                    @foreach ($products as $product)
+                        <div class="p-6 text-gray-900 space-y-5">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                {{ $product->name }} - {{ $product->price }}€
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                Description : {{ $product->description }}
+                            </p>
+                        </div>
+                    @endforeach
+                </div>
                 <div class="p-6 text-gray-900 space-y-5">
                     <x-input-label for="card-holder-name" value="Détenteur de la carte"/>
                     <x-text-input id="card-holder-name" type="text"/>
